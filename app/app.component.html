@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let img of images; let i = index">
+      <img
+        id="img{{ i }}"
+        class="img-fluid"
+        crossOrigin="Anonymous"
+        [src]="img.url"
+      />
+    </div>
+    <div class="col-md-12 mt-3">
+      <button (click)="download()" class="btn btn-primary">Download PDF</button>
+    </div>
+  </div>
+</div>
+
+<table id="table">
+  <tr>
+    <td>Working at iLink Digital. Pune from March 2022</td>
+  </tr>
+  <tr>
+    <td>
+      Experience in Cross-Platform Application Development using Reactjs, React
+      Native, Java Script based mobile app. Experience in designing professional
+      applications using front-end technologies like HTML5, HTML, CSS3,
+      JavaScript, React JS, React- native, ES6.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Experienced Developer in writing exceptionally reliable optimize and clean
+      source code.
+    </td>
+  </tr>
+</table>
